@@ -1,0 +1,23 @@
+Node js Basic
+Introduce to Node js
+Installing the node.js and NPM
+Node && NPM
+
+Working With Node && NPM
+Npm Installing
+node basic usage 
+
+Working with Module
+File system operation
+understanding HTTP Module 
+
+
+1. Node - js runtime Enviroment (v8 engine + js wrapper)
+
+js se backend nahi ban sakta kui ki js ka pass wo funcionality nahi hai
+Rahyn dal socha js se bacjend banna chaiye 
+
+he make google chrome ka v8 engine opensouurce and wo waha cherkhani kar raha hai
+fir usna socha ki js mai code karna hai .Chrome ka v8 engine bana hai c++ mai but wo js sai likhna chata hai. 
+
+Hum js ka code likhenga jo wrapper layer ka js accept wo code v8 engine ke sath c++ modles ke sath ek server create karega 
