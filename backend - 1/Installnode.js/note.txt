@@ -21,3 +21,14 @@ he make google chrome ka v8 engine opensouurce and wo waha cherkhani kar raha ha
 fir usna socha ki js mai code karna hai .Chrome ka v8 engine bana hai c++ mai but wo js sai likhna chata hai. 
 
 Hum js ka code likhenga jo wrapper layer ka js accept wo code v8 engine ke sath c++ modles ke sath ek server create karega 
+
+
+http and https -
+
+1. protocol - rules
+2. internet par kuch karneka liya rules banaya hai .
+3. ab unko follow karna ka liya jarura 
+4. aur wo rules pre installed hai
+
+http - protocol 
+yahi protocall hai ya rule hai jisko follow kare bina app internety pe naa hi kuch bhej sakte ho, naa hi kuch manga sakte ho

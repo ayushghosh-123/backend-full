@@ -1,0 +1,9 @@
+NPM understanding
+
+npm - node package manager  
+text to speach
+
+
+installing  - npm i package namepackage
+uninstall - npm uninstall nampepackage
+installing particular versions 
