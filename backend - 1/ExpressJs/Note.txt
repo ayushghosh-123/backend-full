@@ -1,0 +1,14 @@
+Express js Framework
+
+1. Introduce to express js - 
+MERN stack
+express js ek npm package or it call a Framework
+framework - flow of work 
+
+manages everything from receiving the request and givving the response 
+
+
+Setting up basic express application
+
+
+Routes - sheriyan.com/profile

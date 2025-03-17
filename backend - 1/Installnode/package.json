@@ -1,0 +1,16 @@
+{
+  "name": "installnode",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chacha": "echo\"\u001b[36mRunning tests...\u001b[39m\"&& script.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}

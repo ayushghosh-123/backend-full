@@ -7,3 +7,12 @@ text to speach
 installing  - npm i package namepackage
 uninstall - npm uninstall nampepackage
 installing particular versions 
+
+Dependencies - pacakages and packages ki dependencies 
+Dev Dependencies - aisa packages jo sirf development mein aayege par jab ban jaayega auer upload ho jaayegabtab packages ko use nahi karna honge
+
+kai bar app koi script chalate to likhta ho-
+ npm start
+ npm run dev
+
+ start test  - ye do hai module 
