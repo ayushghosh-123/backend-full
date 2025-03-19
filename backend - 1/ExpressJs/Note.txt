@@ -11,4 +11,7 @@ manages everything from receiving the request and givving the response
 Setting up basic express application
 
 
-Routes - sheriyan.com/profile
+Routes - sheriyan.com/profile '#fff0'
+
+MiddleWare- jab bhi server request acccept karata hai waha se route ke beech pahuchne tak agar aap us request ko beechme rokte ho and kuch perform karte ho,
+to ye element MiddleWare keheta hai 
