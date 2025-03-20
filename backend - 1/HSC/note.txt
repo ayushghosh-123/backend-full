@@ -1,3 +1,3 @@
 Handle , Session and Cookies
 
-Handle backend process of from and making sure the data coming from any frontend lib, fw , template engines we still Handle it in the backend
+hum lok kuch bhi data frontend par broeser par rakhte hai and jab bhi aap kuchh bhi request backend par karenga wo fe par saved data automatically backend par chala jayega 
