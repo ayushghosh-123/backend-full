@@ -1,0 +1,14 @@
+Project -- 
+
+make note maker with npm
+ 
+express install 
+
+Setting perser for from  - Done
+
+setting up ejs for ejs pages 
+
+setting up public static files 
+
+Dynamic routing - 1. Dynamic routing
+                  2. How to take data coming from frontend and backend Route
