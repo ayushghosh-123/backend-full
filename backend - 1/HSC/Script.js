@@ -2,10 +2,14 @@ const express = require('express')
 const app = express()
 
 
-app.use((req, res , next) =>{
-    console.log('middleware challao ....')
-    next()
-});
+// app.use((req, res , next) =>{
+//     console.log('middleware challao ....')
+//     next()
+// });
+
+// use for redable data
+app.use(express.json()) //json format data
+app.use(express.urlencoded({extended: true})) //form data encoded format
 
 app.use((req, res , next) =>{
     console.log('middleware challao aur ek bar ....')
