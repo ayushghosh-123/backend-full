@@ -2,8 +2,11 @@ const express = require('express');
 const Path = require('path');
 const app = express();
 
+// to use json data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// to use static files
 app.use(express.static(Path.join(__dirname, 'public')));
 
 // i am using ejs template engine
