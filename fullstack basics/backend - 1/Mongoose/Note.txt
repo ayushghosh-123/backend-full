@@ -1,0 +1,40 @@
+Data Storage : 
+        aisa kuch jaha saare users ki info store kar skte hai Database  
+
+Types of DBS - SQL , NOSQL
+
+SQL - data ko ek roop main rakhn - tables 
+NOSQL - not table but in JS form.(MongoDB - ACTUAL DATABASE ON THE BASIC OF NOSQL)
+      {
+        name: value ,
+
+      }
+
+WHAT AND WHY -
+1. 
+
+
+TREMINOLOGIES - Collection , Document , Schema, Key , Models 
+1. Collection - 
+story of many data 
+
+Database -> Collection -> Document
+CODE 
+----------------------------------------------------------
+
+
+
+
+    CODE                 DATABASE
+----------------------------------------------------------
+mongoose.connect  ->   Database Create 
+model Create      ->   Collection
+CREATE            ->   Document
+
+
+
+
+
+ 
+
+BACAKEND MAI DO SERVER HAI EK APPLICATION SERVER AND DUSRA HAI DATABASE SERVER . APPLICATION SERVER PAHLE RESPONSE PATA HAI FIR WO DATATBASE SERVER KA PASE JATE HAI. 
