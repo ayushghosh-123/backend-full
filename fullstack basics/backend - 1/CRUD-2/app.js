@@ -43,6 +43,30 @@ app.get('/delete/:id', async (req, res) => {
     }
 });
 
+app.get('/edit/:id', async (req, res) => {
+   let user = await userModule.findOne({_id: req.params.id}); // Fixed "__id" to "_id"
+    res.render("edit", { user }); // Pass "user" to the template
+});
+
+app.post('/update/:userid', async (req, res) => {
+    try {
+        const { image, name, email } = req.body; // Destructuring for clarity
+        console.log(image, name, email); // Log the values for debugging
+        // Corrected the method and parameter: use findOneAndUpdate instead of findOne
+        const user = await userModule.findOneAndUpdate(
+            { _id: req.params.userid },          // Use the correct param name 'userid'
+            { image, name, email },              // Fields to update
+            { new: true }                        // Return the updated document
+        );
+
+        res.redirect("/read"); // Redirect after successful update
+    } catch (error) {
+        console.error("Error updating user:", error);
+        res.status(500).send("Internal Server Error");
+    }
+});
+
+
 app.post('/create', async (req, res) => {
     try {
         let { name, email, image } = req.body;

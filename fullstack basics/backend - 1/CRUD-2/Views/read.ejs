@@ -23,7 +23,7 @@
                     <h5 class="text-zinc-500"><%= e.email %></h5> <!-- Added "=" to output value -->
                     
                     <div class="flex gap-3 mt-10">
-                        <a href="#" class="text-white">Edit User</a> <!-- Fixed class "text-white-600" to "text-white" -->
+                        <a href="/edit/<%= e._id %>" class="text-white">Edit User</a> <!-- Fixed class "text-white-600" to "text-white" -->
                         <a href="/delete/<%= e._id %>" class="text-orange-600">Delete User</a>
                     </div>
                 </div>

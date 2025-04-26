@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <!-- Correct Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 flex items-center justify-center">
+        <form method="POST" action="/create" class="bg-white p-8 rounded-xl shadow-md space-y-4 w-96">
+            <input type="text" placeholder="Username" name="username" class="w-full p-2 border border-gray-300 rounded" required>
+            <input type="email" placeholder="Email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+            <input type="password" placeholder="Password" name="password" class="w-full p-2 border border-gray-300 rounded" required>
+            <input type="number" placeholder="Age" name="age" class="w-full p-2 border border-gray-300 rounded" required>
+            <input type="submit" value="Create User" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 cursor-pointer">
+        </form>
+    </div>
+</body>
+</html>
