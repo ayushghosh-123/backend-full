@@ -11,15 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Set view engine (e.g., EJS, Pug, or another template engine)
 app.set('view engine', 'ejs'); // Change 'ejs' to the appropriate template engine if needed
 
-// Connect to MongoDB (ensure the correct connection string)
-mongoose.connect('mongodb://127.0.0.1:27017/testappl', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
-    console.log('MongoDB connected...');
-}).catch(err => {
-    console.error('MongoDB connection error:', err);
-});
+
 
 app.get('/user', (req, res) => {
     res.render("index");
