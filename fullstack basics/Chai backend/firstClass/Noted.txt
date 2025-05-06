@@ -1,0 +1,6 @@
+computer or mobile - response - server
+
+So, some one on the server . Who might be listen the response .
+/: home routing
+/login : login-setup
+
