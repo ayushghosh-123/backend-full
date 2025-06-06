@@ -1,0 +1,25 @@
+{
+  "name": "four",
+  "version": "1.0.0",
+  "description": "a backend at backewnd repo",
+  "keywords": [
+    "javascript",
+    "backend",
+    "git"
+  ],
+  "license": "ISC",
+  "author": "Ayush ghosh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "prettier": "^3.5.3"
+  }
+}
