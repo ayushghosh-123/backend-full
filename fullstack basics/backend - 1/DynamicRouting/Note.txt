@@ -6,8 +6,10 @@ express install
 
 Setting perser for from  - Done
 
-setting up ejs for ejs pages - install ejs for npm
-                               setup ejs as a for view engine 
+setting up ejs for ejs pages - 
+
+install ejs for npm
+setup ejs as a for view engine 
 
 setting up public static files - ho gya 
 
