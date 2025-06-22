@@ -15,7 +15,7 @@ app.get("/create", async(req, res) => {
         let user = await userModel.create({
             username: "harsh",
             age: 25,
-            email: "ayush@gmail.com"
+            email: "ayush@gmail.com" 
         });
         res.send(user);
     } catch (err) {

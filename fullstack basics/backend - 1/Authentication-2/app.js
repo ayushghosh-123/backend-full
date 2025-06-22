@@ -32,7 +32,7 @@ app.post('/create', async (req, res) => {
         });
 
         let token = jwt.sign({email}, "sssssshssss")
-        res.cookie("token", token)
+        res.cookie("token", token) 
 
         res.send(createdUser);
     } catch (err) {
