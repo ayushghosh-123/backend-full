@@ -6,18 +6,25 @@ express install
 
 Setting perser for from  - Done
 
-setting up ejs for ejs pages - install ejs for npm
-                               setup ejs as a for view engine 
+setting up ejs for ejs pages - 
+
+install ejs for npm
+setup ejs as a for view engine 
 
 setting up public static files - ho gya 
 
 Dynamic routing - 1. Dynamic routing
-                  2. How to take data coming from frontend and backend Route
+                  2. How to take data coming         from frontend and backend Route
+
 Hum log kai baar kuch routes dekhta hai usmein sirf ek his hissa change hota hai - the concept coming up here 
 
 steps -
+
 browser pai jau pahle 
+
 url likha apna jo apko chaiye and enter dabaaiya 
+
 ab us url route ko create kariya 
 res daliya 
+
 ab usi url ko agar dynamic banana hai to realise karo kosa part hai and dynamic bananeka liya usi part aga route mai colon laga do

@@ -3,5 +3,7 @@ Handle , Session and Cookies
 
 Handle backend process of from and making sure the data coming from any frontend lib, fw , template engines we still Handle it in the backend
 
-hum lok kuch bhi data frontend par broeser par rakhte hai and jab bhi aap kuchh bhi request backend par karenga wo fe par saved data automatically backend par chala jayega 
-tumne to bheja tha plane text per server ko milla blob which is not directly redable ab is cheej ko handle karna padega ki hum us blob ko wappas se redable kar sake 
+hum lok kuch bhi data frontend par browser par rakhte hai and jab bhi aap kuchh bhi request backend par karenga wo fb(frontend browser) par saved data automatically backend par chala jayega 
+
+
+tumne to bheja tha plane text per server ko milla block which is not directly redable,  ab is cheej ko handle karna padega ki hum us block ko wappas se redable kar sake 
