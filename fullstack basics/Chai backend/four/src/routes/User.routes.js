@@ -10,6 +10,7 @@ router.post("/login", UserController.loginUser)
 
 // secure routes
 router.route("/logout").post(verifyJwt,  UserController.logOutUser)
+router.route("/refresh-token").post(UserController.refreshAccessToken)
 
 
 export default router 

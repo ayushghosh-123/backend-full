@@ -1,9 +1,9 @@
-import { ApiError } from "../utils/ApiError.js"
+import  ApiError  from "../utils/ApiError.js"
 import { asyncHandler } from "../utils/asyncHandler.js"
 import jwt from "jsonwebtoken"
 import UserModel from "../models/user.model.js"
 
-export const verifyJwt = asyncHandler(async(req, resizeBy, next)=>{
+export const verifyJwt = asyncHandler(async(req, _, next)=>{
     try {
         const token = req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ", "")
     
@@ -12,15 +12,15 @@ export const verifyJwt = asyncHandler(async(req, resizeBy, next)=>{
         }
     
         const decodedToken = jwt.verify(token, process.env.ACESS_TOKEN_SECRET)
-    
         const user = await UserModel.findById(decodedToken?._id).select("-password -refreshToken")
-    
+
         if(!user){
             // dicuss about frontend 
             throw new ApiError(401, "Invalid Acess Token")
         }
     
         req.user = user
+        // console.log(req.user)
         next()
     } catch (error) {
         throw new ApiError(401, error?.message || "Invalid acess Token")
