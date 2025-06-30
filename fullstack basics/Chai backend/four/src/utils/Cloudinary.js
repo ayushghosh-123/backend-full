@@ -10,7 +10,7 @@ import fs from "fs"
     const uploadOnCloudinary = async (localFIlePath) => {
         try {
             if(!localFIlePath) return null
-            // upload thefile on cloudinary
+            // upload the file on cloudinary
            const response = await cloudinary.uploader.upload(localFIlePath, {
                 resource_type: "auto"
             })
