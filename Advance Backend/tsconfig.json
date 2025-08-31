@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",                   // Supports ESM import/export in Node.js
+    "target": "esnext",                     // Latest JavaScript features
+    "types": ["node"],                      // Include Node.js type definitions
+    "rootDir": "./src",                     // Source code location
+    "outDir": "./dist",                     // Compiled JS output folder
+    "sourceMap": true,                      // Generate source maps
+    "declaration": true,                    // Generate .d.ts type declaration files
+    "declarationMap": true,                 // Generate source maps for declaration files
+    "noUncheckedIndexedAccess": true,       // Safer property access on objects/arrays
+    "exactOptionalPropertyTypes": true,     // Strict optional type checking
+    "strict": true,                         // Enable all strict type-checking
+    "jsx": "react-jsx",                     // React JSX transform
+    "verbatimModuleSyntax": true,           // Preserve import/export syntax
+    "isolatedModules": true,                // Ensure each file can be transpiled independently
+    "noUncheckedSideEffectImports": true,   // Warn on unused side-effect imports
+    "moduleDetection": "force",             // Detect modules without `import/export`
+    "skipLibCheck": true                     // Skip type checking for libraries
+  }
+}

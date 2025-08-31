@@ -232,6 +232,9 @@ const updateAcccountDetails = asyncHandler(async(req, res) => {
 const updateUserAvatar = asyncHandler(async(req, res)=> {
     const avaterlocalpath = req.file?.path
 
+    // Todo: delete old imaages
+    
+
     if (!avaterlocalpath) {
         throw new ApiError(400, "Avatar file is missing")
     }
@@ -274,4 +277,48 @@ const updateUserCoverImage = asyncHandler(async(req, res)=> {
     return res.status(200).json(new ApiResponse(200, user, "Cover Image updated successfully"))
 })
 
-export default { registerUser, loginUser, logOutUser , refreshAccessToken,  getCurrentUser, changeCurrentPassword, updateAcccountDetails, updateUserAvatar, updateUserCoverImage };
+const getUserChannelProfile = asyncHandler(async(req, res)=>{
+  const {username} = req.params
+
+  if (!username?.trim()){
+    throw new ApiError(400, "useername is missing")
+  }
+
+  const channel = await User.aggregate([
+      {
+         $match: {
+          username: username?.toLowerCase()
+         }
+      },{
+         $lookup: {
+            from: "subscription",
+            localField: "_id",
+            foreignField: "channel",
+            as: "subscribers"
+         }
+      }, 
+      {
+        $lookup:{
+           from: "subscription",
+            localField: "_id",
+            foreignField: "subscribers",
+            as: "subscriberdTo"
+        }
+      },{
+        $addFields:{
+            subscriberCount: {
+              $size: "$subscribers"
+            },
+            channelSubscribedToCount:{
+               $size: "$subscriberdTo"
+            },
+            isSubscribed:{
+              $cond: {if: {$in: [req.user?._id, "$subscribers.subscriber"]}
+                
+              }
+            }
+        }
+      }
+  ])
+})
+export default { registerUser, loginUser, logOutUser , refreshAccessToken,  getCurrentUser, changeCurrentPassword, updateAcccountDetails, updateUserAvatar, updateUserCoverImage , getUserChannelProfile };
