@@ -192,6 +192,8 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, { accessToken, newRefreshToken }, "Access token refreshed successfully"));
 });
 
+
+// for change the password 
 const changeCurrentPassword = asyncHandler(async(req, res)=> {
     const {oldPasssword, newPassword} = req.body
 
@@ -208,10 +210,12 @@ const changeCurrentPassword = asyncHandler(async(req, res)=> {
   return res.status(200).json(new ApiResponse(200, {}, "password changed succesfully"))
 })
 
+// get the current user details 
 const getCurrentUser = asyncHandler(async(req, res)=>{
   return res.status(200).json(200, req.user, "current user fetch successfully")
 })
 
+// update the current user details 
 const updateAcccountDetails = asyncHandler(async(req, res) => {
     const {fullName, email} = req.body;
 
@@ -229,6 +233,7 @@ const updateAcccountDetails = asyncHandler(async(req, res) => {
   return res.status(200).json(new ApiResponse(200, user, "Account details update successfully"))
 })
 
+// update user avatar 
 const updateUserAvatar = asyncHandler(async(req, res)=> {
     const avaterlocalpath = req.file?.path
 
@@ -255,6 +260,7 @@ const updateUserAvatar = asyncHandler(async(req, res)=> {
      return res.status(200).json(new ApiResponse(200, user, "Avatar Image updated successfully"))
 })
 
+// update user cover image 
 const updateUserCoverImage = asyncHandler(async(req, res)=> {
     const coverImagelocalpath = req.file?.path
 
@@ -277,6 +283,8 @@ const updateUserCoverImage = asyncHandler(async(req, res)=> {
     return res.status(200).json(new ApiResponse(200, user, "Cover Image updated successfully"))
 })
 
+
+// get user profile 
 const getUserChannelProfile = asyncHandler(async(req, res)=>{
   const {username} = req.params
 
